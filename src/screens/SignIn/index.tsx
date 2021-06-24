@@ -1,20 +1,24 @@
 import React from 'react'
+import { useNavigation } from '@react-navigation/core'
 import {
     Text,
     Image,
-    View,
-    StatusBar
+    View
 } from 'react-native'
 import { styles } from './styles'
-
 import illustrationImg from '../../assets/illustration.png'
+
 import { ButtonIcon } from '../../components/ButtonIcon'
 
 export function SignIn(){
+    const navigation = useNavigation()
+
+    function handleHome(){
+        navigation.navigate('Home')
+    }
+
     return(
         <View style={styles.container}>
-            <StatusBar barStyle='light-content' backgroundColor='transparent' translucent />
-
             <Image source={illustrationImg} style={styles.image} resizeMode='stretch' />
 
             <View style={styles.content}>
@@ -29,7 +33,11 @@ export function SignIn(){
                 </Text>
             </View>
 
-            <ButtonIcon title='Entrar com Discord' />
+            <ButtonIcon 
+                title='Entrar com Discord' 
+                activeOpacity={0.7} 
+                onPress={handleHome} 
+            />
         </View>
     )
 }
