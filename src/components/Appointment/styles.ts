@@ -33,10 +33,11 @@ export const styles = StyleSheet.create({
     date:{
         fontFamily: theme.fonts.text500,
         color: theme.colors.highlight,
-        fontSize: 13
+        fontSize: 13,
+        marginLeft: 6
     },
     player:{
-
+        marginLeft: 6
     },
     info:{
         flexDirection: 'row',

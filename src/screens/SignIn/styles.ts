@@ -29,5 +29,8 @@ export const styles = StyleSheet.create({
         marginTop: 16,
         fontFamily: theme.fonts.text400,
         lineHeight: 25
+    },
+    button:{
+        width: 274
     }
 })
