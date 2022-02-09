@@ -25,7 +25,8 @@ export const styles = StyleSheet.create({
     description:{
         fontFamily: theme.fonts.text400,
         fontSize: 13,
-        color: theme.colors.heading
+        color: theme.colors.heading,
+        lineHeight: 21
     },
     content:{
         paddingHorizontal: 24

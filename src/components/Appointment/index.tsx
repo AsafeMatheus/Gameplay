@@ -6,16 +6,10 @@ import { styles } from './styles'
 import PlayerSvg from '../../assets/player.svg'
 import CalenderSvg from '../../assets/calendar.svg'
 
+import { GuildProps } from '../Guild'
 import { GuildIcon } from '../GuildIcon'
 import { categories } from '../../utils/categories'
 import { theme } from '../../global/styles/theme'
-
-export type GuildProps = {
-    id: string,
-    name: string,
-    icon: null,
-    owner: boolean
-}
 
 export type AppointmentProps = {
     id: string,

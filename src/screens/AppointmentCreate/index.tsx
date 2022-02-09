@@ -28,6 +28,10 @@ export function AppointmentCreate(){
         setGuild(guildSelected)
     }
 
+    function handleCloseGuilds(){
+        setOpenModalGuilds(false)
+    }
+
     return(
         <BackGround>
             <Header
@@ -118,7 +122,7 @@ export function AppointmentCreate(){
                 </View>
             </ScrollView>
             
-            <ModalView visible={openModalGuilds}>
+            <ModalView visible={openModalGuilds} closeModal={handleCloseGuilds}>
                 <Guilds
                     handleGuildSelected={handleGuildSelect}
                 />
