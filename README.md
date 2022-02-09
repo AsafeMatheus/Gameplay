@@ -1,5 +1,5 @@
 # Tasks manager
-An android and ios app, made during a Rocketseat event called "next level week".
+An android and ios app, made during a Rocketseat event called "next level week (react native and expo)".
 
 ## Loading
 <img src='./images/loading.jpeg' width='400' />
